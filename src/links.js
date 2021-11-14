@@ -6,7 +6,8 @@ var link = [
   },
   {
     id: 2,
-    link: "https://www.tradingview.com/chart/9Ms0FxZ3/?symbol={ticker}",
+    link:
+      "https://www.tradingview.com/chart/?offer_id=10&aff_id=25149&symbol={ticker}",
     name: "TradingView"
   },
   {
@@ -33,12 +34,13 @@ var link = [
   },
   {
     id: 7,
-    link: "https://finance.yahoo.com/quote/{ticker}",
+    link:
+      "https://finance.yahoo.com/quote/{ticker}#mrt-node-Lead-4-QuoteHeader",
     name: "Yahoo Finance"
   },
   {
     id: 8,
-    link: "https://stockCharts.com",
+    link: "https://stockcharts.com/h-sc/ui?s={ticker}",
     name: "Stockcharts"
   },
   {
@@ -48,9 +50,8 @@ var link = [
   },
   {
     id: 10,
-    link:
-      "http://openinsider.com/screener?s={ticker}&o=&pl=&ph=&ll=&lh=&fd=730&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysago=&xp=1&xs=1&vl=&vh=&ocl=&och=&sic1=-1&sicl=100&sich=9999&grp=0&nfl=&nfh=&nil=&nih=&nol=&noh=&v2l=&v2h=&oc2l=&oc2h=&sortcol=0&cnt=100&page=1",
-    name: "OpenInsider"
+    link: "https://app.tikr.com",
+    name: "Tikr"
   },
   {
     id: 11,
@@ -92,11 +93,6 @@ var link = [
     id: 18,
     link: "https://www.google.com/finance/quote/{ticker}",
     name: "Google Finance "
-  },
-  {
-    id: 19,
-    link: "https://app.tikr.com",
-    name: "Tikr"
   }
 ];
 

@@ -1,18 +1,26 @@
-import { Link } from "@mui/material";
+import { List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
+import { StarBorder } from "@mui/icons-material";
 
 export default function TickerLinks({ bookmarks, ticker }) {
   console.log(ticker);
   return (
-    <div>
+    <List>
       {bookmarks.map((bookmark) => {
         return (
-          <div key={bookmark.id}>
-            <Link href={bookmark.link.replace("{ticker}", ticker)}>
-              {bookmark.name}
-            </Link>
-          </div>
+          <ListItem
+            button
+            component="a"
+            href={bookmark.link.replace("{ticker}", ticker)}
+          >
+            <ListItemIcon>
+              <StarBorder />
+            </ListItemIcon>
+            <ListItemText
+              primary={ticker.toUpperCase() + " - " + bookmark.name}
+            />
+          </ListItem>
         );
       })}
-    </div>
+    </List>
   );
 }
