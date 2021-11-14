@@ -1,0 +1,22 @@
+Prompt Component
+TickerBox input
+Run button
+
+Link Component
+star button, 
+Link(name, url)
+
+TickerCard Component
+close button
+[ <link>, <link, <link> ]
+
+FavoriteCard Component
+[ <link> ]
+
+Canvas Component
+FavoriteCard Component
+[ TickerCard Component ]
+
+DashboardComponent
+Prompt Component
+Canvas Component
